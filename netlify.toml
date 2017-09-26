@@ -1,3 +1,3 @@
 [build]
     command = "npm install"
-    publish = "npm run build --dest "./"
+    publish = "npm run build --dest ."
