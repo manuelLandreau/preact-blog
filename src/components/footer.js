@@ -4,7 +4,7 @@ const Footer = () => (
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    Zenzen &copy; 2017
+                    zenzentai.com &copy; 2017
                 </p>
             </div>
         </div>

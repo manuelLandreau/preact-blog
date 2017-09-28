@@ -18,7 +18,9 @@ export default class App extends Component {
 	 *	@param {string} event.url	The newly routed URL
 	 */
 	handleRoute = event => {
+		// bugfix on position on page change
         document.body.scrollTop = 0;
+        // I don't remember why
         this.setState({currentUrl: event.url});
 	};
 
