@@ -5,7 +5,7 @@ const Header = () => (
             <div class="container">
                 <div class="nav-left">
                     <a class="nav-item" href="./index.html">
-                        Front app
+                        <h1>ZENZENTAI.com</h1>
                     </a>
                 </div>
                 <span class="nav-toggle">
