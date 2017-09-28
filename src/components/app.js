@@ -6,6 +6,9 @@ import Footer from './footer';
 import Home from '../routes/home';
 import Article from '../routes/article';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-107212297-1');
+
 export default class App extends Component {
 	constructor() {
 		super();
@@ -20,6 +23,9 @@ export default class App extends Component {
 	handleRoute = event => {
 		// bugfix on position on page change
         document.body.scrollTop = 0;
+        // Google analytics
+        ReactGA.set({ page: window.location.pathname + window.location.search });
+        ReactGA.pageview(window.location.pathname + window.location.search);
         // I don't remember why
         this.setState({currentUrl: event.url});
 	};
