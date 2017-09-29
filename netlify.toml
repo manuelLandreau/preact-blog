@@ -1,3 +1,2 @@
 [build]
-    command = "npm install -g preact-cli && npm install"
     publish = "build"
