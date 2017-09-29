@@ -19,7 +19,7 @@ export default class Home extends Component {
 	}
 
 	fetchArticles() {
-        const hostApi = 'http://58cd6c5487.url-de-test.ws';
+        const hostApi = 'http://58cd6c5487.url-de-test.ws/api';
 	    fetch(hostApi + '/articles').then((response) => {
             const contentType = response.headers.get('content-type');
             if(contentType && contentType.indexOf('application/json') !== -1) {

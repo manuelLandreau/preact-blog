@@ -16,7 +16,7 @@ export default class Article extends Component {
     }
 
     fetchArticleBySlug(slug) {
-        const hostApi = 'http://58cd6c5487.url-de-test.ws';
+        const hostApi = 'http://58cd6c5487.url-de-test.ws/api';
         fetch(hostApi + '/articles/' + slug).then((response) => {
             const contentType = response.headers.get('content-type');
             if (contentType && contentType.indexOf('application/json') !== -1) {
