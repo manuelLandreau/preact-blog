@@ -24,7 +24,8 @@ export default class App extends Component {
 		// bugfix on position on page change
         document.body.scrollTop = 0;
         // Google analytics
-        ReactGA.pageview(window.location.hash);
+        ReactGA.set({ page: window.location.pathname + window.location.search });
+        ReactGA.pageview(window.location.pathname + window.location.search);
         // I don't remember why
         this.setState({currentUrl: event.url});
 	};
